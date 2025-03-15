@@ -1,4 +1,39 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(14% 0 0);
+  --color-base-200: oklch(20% 0 0);
+  --color-base-300: oklch(26% 0 0);
+  --color-base-content: oklch(97% 0 0);
+  --color-primary: oklch(74% 0.16 232.661);
+  --color-primary-content: oklch(29% 0.066 243.157);
+  --color-secondary: oklch(84% 0.238 128.85);
+  --color-secondary-content: oklch(27% 0.072 132.109);
+  --color-accent: oklch(71% 0.203 305.504);
+  --color-accent-content: oklch(29% 0.149 302.717);
+  --color-neutral: oklch(37% 0 0);
+  --color-neutral-content: oklch(98% 0 0);
+  --color-info: oklch(68% 0.169 237.323);
+  --color-info-content: oklch(97% 0.013 236.62);
+  --color-success: oklch(70% 0.14 182.503);
+  --color-success-content: oklch(98% 0.014 180.72);
+  --color-warning: oklch(79% 0.184 86.047);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.013 17.38);
+  --radius-selector: 2rem;
+  --radius-field: 0.25rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
 
 #root {
   max-width: 1280px;

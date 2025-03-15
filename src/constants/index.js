@@ -4,25 +4,18 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
-    reactjs,
-    redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
+    mysql,
+    php,
+    vue,
+    laravel,
     meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
     jobit,
     tripguide,
-    threejs,
+    carrent,
 } from "../assets";
 
 export const navLinks = [
@@ -42,30 +35,30 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Full Stack Developer",
         icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
     },
     {
         title: "Backend Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Vue & Laravel Specialist",
+        icon: mobile,
+    },
+    {
+        title: "Tech Explorer",
         icon: creator,
     },
 ];
 
 const technologies = [
     {
-        name: "HTML 5",
+        name: "HTML",
         icon: html,
     },
     {
-        name: "CSS 3",
+        name: "CSS",
         icon: css,
     },
     {
@@ -73,98 +66,80 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
+        name: "Vue",
+        icon: vue,
     },
     {
-        name: "React JS",
-        icon: reactjs,
+        name: "Laravel",
+        icon: laravel,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "PHP",
+        icon: php,
+    },
+    {
+        name: "MySQL",
+        icon: mysql,
     },
     {
         name: "Tailwind CSS",
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
+        name: "Git",
         icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
     },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
+        title: "Software Engineer",
+        company_name: "Crown Gas & Power",
         icon: meta,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "May 2021 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed public-facing applications enhancing customer engagement.",
+            "Automated internal workflows saving over 30 hours per week.",
+            "Optimized performance and responsiveness of web platforms.",
+            "Integrated secure and scalable backend features with front-end systems.",
+            "Collaborated closely with UX/UI teams and backend engineers.",
+        ],
+    },
+    {
+        title: "Digital Engineer",
+        company_name: "Deeper Digital Engineer Programme",
+        icon: jobit,
+        iconBg: "#383E56",
+        date: "Jan 2021 - May 2021",
+        points: [
+            "Gained strong foundations in PHP, MySQL, JS, HTML & CSS.",
+            "Built projects simulating real-world dev challenges.",
+            "Enhanced understanding of full stack development workflows.",
+        ],
+    },
+    {
+        title: "Full Stack Engineer Trainee",
+        company_name: "IT Career Switch",
+        icon: tripguide,
+        iconBg: "#E6DEDD",
+        date: "Nov 2020 - May 2021",
+        points: [
+            "Completed a structured program with full-stack focus.",
+            "Worked on practical projects and obtained certifications.",
+            "Gained real-world readiness with a robust portfolio.",
+        ],
+    },
+    {
+        title: "Entrepreneur",
+        company_name: "eBay",
+        icon: carrent,
+        iconBg: "#383E56",
+        date: "Aug 2015 - Aug 2022",
+        points: [
+            "Improved communication and customer interaction through sales.",
+            "Gained time management and problem-solving experience.",
+            "Used software skills to manage and automate listings.",
         ],
     },
 ];
@@ -172,42 +147,34 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Abdullah brought a new level of efficiency to our systems — his automation work alone saves our team hours weekly.",
+        name: "Line Manager",
+        designation: "Team Lead",
+        company: "Crown Gas & Power",
+        image: "https://randomuser.me/api/portraits/men/11.jpg",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "His ability to collaborate and innovate under pressure was impressive during our engineer training program.",
+        name: "Mentor",
+        designation: "Programme Lead",
+        company: "Deeper Digital",
+        image: "https://randomuser.me/api/portraits/women/8.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Automated Reporting System",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Developed a reporting automation tool that reduced over 30 hours of manual work per week by streamlining data collection and report generation.",
         tags: [
             {
-                name: "react",
+                name: "laravel",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "mysql",
                 color: "green-text-gradient",
             },
             {
@@ -215,45 +182,45 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
         image: jobit,
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "Customer Onboarding App",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Built a public-facing Vue/Laravel application to streamline new customer onboarding and improve user experience.",
         tags: [
             {
-                name: "nextjs",
+                name: "vue",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "laravel",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "php",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: carrent,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Internal Tools Suite",
+        description:
+            "Developed internal tools that improve data entry, user communication, and performance monitoring across teams.",
+        tags: [
+            {
+                name: "javascript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "php",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
                 color: "pink-text-gradient",
             },
         ],

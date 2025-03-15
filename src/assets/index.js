@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logo1 from "./logo1.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -8,6 +9,10 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
+import mysql from "./tech/mysql.png";
+import php from "./tech/php.svg";
+import vue from "./tech/vue.png";
+import laravel from "./tech/laravel.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -32,6 +37,7 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  logo1,
   backend,
   creator,
   mobile,
@@ -40,6 +46,10 @@ export {
   menu,
   close,
   css,
+  mysql,
+  php,
+  vue,
+  laravel,
   docker,
   figma,
   git,
