@@ -15,7 +15,6 @@ const Navbar = () => {
                 }}
             >
                 <img src={logo1} alt="logo" className="w-24 h-12 object-contain"/>
-                <p className="text-white text-[18px] font-bold cursor-pointer">Abdullah Zafar</p>
             </Link>
         </div>
         <div className="navbar-end">
