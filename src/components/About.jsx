@@ -8,17 +8,19 @@ import {fadeIn, textVariant} from '../utils/motion.js';
 import { SectionWrapper} from '../hoc/index.js';
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt  className="background-stripes parallax-effect-glare-scale"
-         perspective={500}
-         glareEnable={true}
-         glareMaxOpacity={0.45}
-         scale={1.02}>
+  <Tilt
+    className="background-stripes parallax-effect-glare-scale rounded-xl overflow-hidden"
+    perspective={1000}
+    glareEnable={true}
+    glareMaxOpacity={0.25}
+    scale={1.01}
+  >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] inner-element'
+      className='w-full green-pink-gradient p-[1px] rounded-xl inner-element'
     >
       <div
-        className='bg-gradient-to-b from-primary-content to-secondary-content rounded-[20px] py-5 px-4 h-48 flex justify-evenly items-center flex-col'
+        className='bg-gradient-to-b from-primary-content to-secondary-content rounded-xl py-5 px-4 h-48 flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
