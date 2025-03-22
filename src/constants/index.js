@@ -43,7 +43,7 @@ const services = [
         icon: backend,
     },
     {
-        title: "Vue & Laravel Specialist",
+        title: "Vue, React & Laravel Specialist",
         icon: mobile,
     },
     {

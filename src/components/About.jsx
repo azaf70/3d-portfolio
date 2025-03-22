@@ -5,6 +5,7 @@ import {motion} from 'framer-motion'
 import {styles} from '../styles.js';
 import {services} from '../constants/index.js';
 import {fadeIn, textVariant} from '../utils/motion.js';
+import { SectionWrapper} from '../hoc/index.js';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt  className="background-stripes parallax-effect-glare-scale"
@@ -49,8 +50,8 @@ const About = () => {
         className='text-lg text-gray-300 leading-relaxed mt-4'
         variants={fadeIn("up", "spring", 0.5, 1.25)}
       >
-        Experienced professional with a successful track record of over 3 years in
-        maintaining, enhancing, and developing both legacy systems and public-facing applications.
+        Experienced professional with a successful track record of <strong className='text-secondary'>4+</strong> years in
+        maintaining, enhancing, and developing both legacy systems and public-facing applications on a commercial level.
         Proficient in utilizing the latest technologies to create dynamic web applications that drive optimal
         user experiences. Known for delivering exceptional user support and maximizing efficiency in Agile
         environments.
@@ -58,11 +59,11 @@ const About = () => {
 
       <div className='mt-20 grid grid-cols-2 gap-10'>
         {services.map((service, index) => (
-          <ServiceCard index={index} {...service} />
+          <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
     </>
   )
 }
 
-export default About
+export default SectionWrapper(About, 'about')
