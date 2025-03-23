@@ -12,6 +12,7 @@ import {
     php,
     vue,
     laravel,
+    reactjs,
     meta,
     jobit,
     tripguide,
@@ -72,6 +73,10 @@ const technologies = [
     {
         name: "Laravel",
         icon: laravel,
+    },
+    {
+        name: "React",
+        icon: reactjs,
     },
     {
         name: "PHP",
