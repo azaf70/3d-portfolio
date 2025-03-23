@@ -28,4 +28,4 @@ dist-ssr
 *.iml
 
 #env
-.env
+#.env
