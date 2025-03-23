@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.bashrc
 
 echo "Pulling latest code..."
 git pull origin main
