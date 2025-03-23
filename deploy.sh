@@ -5,7 +5,8 @@ git pull origin main
 
 echo "Building for production..."
 npm install
-npm run build
+RAYON_NUM_THREADS=1 npm install
+RAYON_NUM_THREADS=1 npm run build || { echo "❌ Build failed"; exit 1; }
 
 echo "Clearing old build files..."
 rm -rf assets
