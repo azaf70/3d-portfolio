@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import { textVariant, fadeIn } from '../utils/motion.js';
 import { styles } from '../styles.js';
+import { SectionWrapper } from '../hoc/index.js';
 
 const Contact = () => {
   const formRef = React.useRef();
@@ -139,4 +140,4 @@ const Contact = () => {
   );
 };
 
-export default Contact
+export default SectionWrapper(Contact, 'contact')
