@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Pulling latest code..."
 git pull origin main
 
@@ -6,8 +7,11 @@ echo "Building for production..."
 npm install
 npm run build
 
-echo "Deploying to live..."
-cp -r dist/* ./
-rm -rf dist/
+echo "Clearing old build files..."
+rm -rf assets
+rm -f index-*.js index-*.css
 
-echo "✅ Deployed successfully!"
+echo "Deploying new build..."
+cp -r dist/* .
+
+echo "✅ Deployment complete!"
