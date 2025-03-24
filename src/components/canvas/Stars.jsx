@@ -1,4 +1,4 @@
-import { useState, useRef, Suspense } from 'react'
+import { useState, useRef, Suspense, useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial, Preload } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
@@ -23,9 +23,42 @@ const StarBackground = (props) => {
     return positions
   })
 
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      // Convert mouse coordinates to normalized device coordinates (-1 to +1)
+      setMousePosition({
+        x: (event.clientX / window.innerWidth) * 2 - 1,
+        y: -(event.clientY / window.innerHeight) * 2 + 1
+      })
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
+  const [time, setTime] = useState(0)
+
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta/15
-    ref.current.rotation.y -= delta/20
+    setTime(time => time + delta)
+
+    // Autonomous motion using sine waves
+    const autonomousX = Math.sin(time * 0.3) * 0.05
+    const autonomousY = Math.cos(time * 0.2) * 0.05
+
+    // Base rotation with smoother movement
+    ref.current.rotation.x -= delta/20
+    ref.current.rotation.y -= delta/25
+
+    // Blend between autonomous motion and mouse interaction
+    const mouseActive = Math.abs(mousePosition.x) > 0.1 || Math.abs(mousePosition.y) > 0.1
+    const targetRotationX = mouseActive ? mousePosition.y * 0.3 : autonomousX
+    const targetRotationY = mouseActive ? mousePosition.x * 0.3 : autonomousY
+    
+    // Smooth interpolation
+    ref.current.rotation.x += (targetRotationX - ref.current.rotation.x) * 0.05
+    ref.current.rotation.y += (targetRotationY - ref.current.rotation.y) * 0.05
   })
 
   return (
@@ -50,8 +83,6 @@ const StarsCanvas = () => {
         <Suspense fallback={null}>
           <StarBackground />
         </Suspense>
-
-        <Preload all />
       </Canvas>
     </div>
   )

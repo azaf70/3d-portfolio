@@ -79,7 +79,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8 w-full max-w-3xl mx-auto relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl blur-2xl group-hover:blur-2xl transition-all duration-500"></div>
           <div className="relative bg-[#151030]/40 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-xl">
             <div className="relative">
               <input
