@@ -5,7 +5,8 @@ import { StarsCanvas } from './components/canvas';
 import Toast from './components/Toast';
 
 const App = () =>  {
-  return (
+console.log("DEPLOY TEST v2");  
+return (
     <>
       <BrowserRouter>
         <div className='relative z-0'>
