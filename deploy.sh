@@ -1,5 +1,10 @@
 #!/bin/bash
-source ~/.bashrc
+
+# Check if npm is available
+if ! command -v npm &> /dev/null; then
+    echo "npm not found, sourcing bashrc..."
+    source ~/.bashrc
+fi
 
 echo "Pulling latest code..."
 git pull origin main

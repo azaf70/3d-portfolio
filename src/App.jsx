@@ -5,7 +5,6 @@ import { StarsCanvas } from './components/canvas';
 import Toast from './components/Toast';
 
 const App = () =>  {
-console.log("DEPLOY TEST v2");  
 return (
     <>
       <BrowserRouter>
